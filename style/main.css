@@ -457,3 +457,41 @@ input:checked + .slider:before {
   box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
 /* End Toggle switch */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px) {
+  #main-portofolio {
+    gap: 10rem;
+  }
+  .header-container {
+    flex-direction: column-reverse;
+  }
+  .card-left-aligned {
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .card-right-aligned {
+    height: 100%;
+    flex-direction: column;
+  }
+  .card-content-containerSs,
+  .card-content-containerIn,
+  .card-content-containerBSM {
+    width: 80%;
+    height: 80vh;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1rem;
+    animation: colorMoveContainers 3s infinite;
+  }
+  .card-content-container-text {
+    width: 80%;
+    height: 20%;
+    padding: 3rem;
+  }
+}
