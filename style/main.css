@@ -20,6 +20,8 @@ body.light-theme {
   --header-text-top: #737373;
   overflow-x: hidden;
   background-color: var(--color-theme);
+  --src-socials-insta: url(./media/instagram-dark.png);
+  --src-socials-linkedin: url(./media/linkedin-dark.png);
 }
 body.dark-theme {
   --color-theme: #212121;
@@ -36,6 +38,8 @@ body.dark-theme {
   --gradient-color-in2: #4193f8;
   --gradient-color-BSM1: #b8bee2;
   --gradient-color-BSM2: #667bf7;
+  --src-socials-insta: url(./media/instagram-light.png);
+  --src-socials-linkedin: url(./media/linkedin-light.png);
 }
 #main-portofolio {
   width: 100vw;
@@ -63,8 +67,8 @@ body.dark-theme {
 .card-content-containerSs,
 .card-content-containerIn,
 .card-content-containerBSM {
-  width: 50%;
-  height: 90%;
+  width: 45%;
+  height: 80%;
   border-radius: 20%;
   display: flex;
   align-items: center;
@@ -96,7 +100,7 @@ body.dark-theme {
   border: 3px solid var(--animation-color-2);
 }
 .card-content-container-text {
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -252,8 +256,8 @@ iframe {
   }
 }
 footer {
+  position: relative;
   margin-top: 5rem;
-  border-top: 2px solid var(--reverse-color-theme);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -262,21 +266,25 @@ footer {
 }
 .footer-text {
   padding: 1rem;
-  width: 40%;
+  width: 50%;
   height: 40%;
   color: var(--reverse-color-theme);
   display: flex;
   flex-direction: column;
-  align-items: end;
-  justify-content: space-around;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
 }
 .socials-ul {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  position: absolute;
+  bottom: 2rem;
+  gap: 1.5rem;
   list-style: none;
-  width: 60%;
+  width: 100%;
 }
 form {
   background: transparent;
@@ -286,6 +294,7 @@ form {
   flex-direction: column;
   width: 40%;
   gap: 1.5rem;
+  margin-bottom: 0rem;
 }
 .input-container {
   position: relative;
@@ -332,6 +341,10 @@ form input:valid ~ label {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+form.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
 
 /* Button from UIverse */
 button {
@@ -361,7 +374,7 @@ button:hover {
   --height-of-switch: 2em;
   --size-of-icon: 1.4em;
   --slider-offset: 0.3em;
-  position: fixed;
+  position: absolute;
   top: 3rem;
   width: var(--width-of-switch);
   height: var(--height-of-switch);
@@ -503,8 +516,21 @@ input:checked + .slider:before {
   }
   form {
     width: 90%;
+    margin-bottom: 5rem;
   }
-  .socials-ul {
-    width: 100%;
+}
+@media only screen and (max-width: 400px) {
+  .header-text-content {
+    width: 95%;
+    margin-top: 1rem;
+  }
+  .header-text-top {
+    font-size: 1.3rem;
+  }
+  .header-text-name {
+    font-size: 1.7rem;
+  }
+  .header-text-bottom li {
+    font-size: 1rem;
   }
 }
