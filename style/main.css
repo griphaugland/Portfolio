@@ -20,8 +20,6 @@ body.light-theme {
   --header-text-top: #737373;
   overflow-x: hidden;
   background-color: var(--color-theme);
-  --src-socials-insta: url(./media/instagram-dark.png);
-  --src-socials-linkedin: url(./media/linkedin-dark.png);
 }
 body.dark-theme {
   --color-theme: #212121;
@@ -38,8 +36,6 @@ body.dark-theme {
   --gradient-color-in2: #4193f8;
   --gradient-color-BSM1: #b8bee2;
   --gradient-color-BSM2: #667bf7;
-  --src-socials-insta: url(./media/instagram-light.png);
-  --src-socials-linkedin: url(./media/linkedin-light.png);
 }
 #main-portofolio {
   width: 100vw;
@@ -67,6 +63,7 @@ body.dark-theme {
 .card-content-containerSs,
 .card-content-containerIn,
 .card-content-containerBSM {
+  position: relative;
   width: 45%;
   height: 80%;
   border-radius: 20%;
@@ -107,6 +104,7 @@ body.dark-theme {
   gap: 1rem;
   align-items: start;
   justify-content: center;
+  position: relative;
 }
 .website-image-wrapper {
   width: 90%;
@@ -171,6 +169,7 @@ iframe {
   color: var(--reverse-color-theme);
 }
 .website-name-header {
+  position: relative;
   font-weight: 500;
   font-size: 42px;
   display: flex;
@@ -345,7 +344,14 @@ form.disabled {
   pointer-events: none;
   opacity: 0.7;
 }
-
+.lang {
+  margin-left: 15px;
+}
+.repo-logo {
+  position: absolute;
+  right: 85px;
+  bottom: 42px;
+}
 /* Button from UIverse */
 button {
   position: relative;
@@ -532,5 +538,20 @@ input:checked + .slider:before {
   }
   .header-text-bottom li {
     font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .repo-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 42px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .repo-logo {
+    display: flex;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
   }
 }
