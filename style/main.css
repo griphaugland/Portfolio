@@ -71,6 +71,8 @@ body.dark-theme {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+}
+iframe {
   animation: colorMoveContainers 3s infinite;
 }
 #StudentSnacksDiv {
@@ -85,7 +87,18 @@ body.dark-theme {
   --animation-color-1: #ebebeb;
   --animation-color-2: #667bf7;
 }
-
+.card-content-containerSs {
+  --animation-color-1: #ead2d2;
+  --animation-color-2: #31492e;
+}
+.card-content-containerIn {
+  --animation-color-1: #fcfbfb;
+  --animation-color-2: #4193f8;
+}
+.card-content-containerBSM {
+  --animation-color-1: #ebebeb;
+  --animation-color-2: #667bf7;
+}
 .Inbtn,
 .Inbtn:hover,
 .Ssbtn,
