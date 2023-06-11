@@ -66,32 +66,32 @@ body.dark-theme {
   position: relative;
   width: 45%;
   height: 80%;
-  border-radius: 20%;
+  border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  padding: 1rem;
   animation: colorMoveContainers 3s infinite;
 }
-.card-content-containerSs {
+#StudentSnacksDiv {
   --animation-color-1: #ead2d2;
   --animation-color-2: #31492e;
 }
-.card-content-containerIn {
+#IntrepidDiv {
   --animation-color-1: #fcfbfb;
   --animation-color-2: #4193f8;
 }
-.card-content-containerBSM {
+#BergenScienceMuseumDiv {
   --animation-color-1: #ebebeb;
   --animation-color-2: #667bf7;
 }
-.card-content-containerSs button,
-.card-content-containerIn button,
-.card-content-containerBSM button,
-.card-content-containerSs button:hover,
-.card-content-containerIn button:hover,
-.card-content-containerBSM button:hover {
+
+.Inbtn,
+.Inbtn:hover,
+.Ssbtn,
+.Ssbtn:hover,
+.BSMbtn,
+.BSMbtn:hover {
   background: var(--animation-color-2);
   color: var(--animation-color-1);
   border: 3px solid var(--animation-color-2);
@@ -348,9 +348,15 @@ form.disabled {
   margin-left: 15px;
 }
 .repo-logo {
-  position: absolute;
-  right: 85px;
-  bottom: 42px;
+  align-self: center;
+}
+.button-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  gap: 1.5rem;
 }
 /* Button from UIverse */
 button {

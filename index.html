@@ -43,27 +43,8 @@
               title="Bergen Science Museum iFrame"
             ></iframe>
           </div>
-          <a
-            target="_blank"
-            name="Send to Bergen Science Museum"
-            href="https://cosmic-stardust-f6a1ad.netlify.app/"
-            ><button>Show me more</button></a
-          >
-          <a
-            class="repo-logo"
-            href="https://github.com/griphaugland/SemesterProject"
-            target="_blank"
-            name="link to github repository"
-          >
-            <img
-              class="github"
-              src="./media/github-light.png"
-              height="30px"
-              width="30px"
-            />
-          </a>
         </div>
-        <div class="card-content-container-text">
+        <div class="card-content-container-text" id="BergenScienceMuseumDiv">
           <h2 class="website-name-header" id="bergen-science-museum">
             Bergen Science Museum
           </h2>
@@ -73,6 +54,27 @@
             realize that development is what I want to do with my life. This was
             a big part of the start of my journey.
           </p>
+          <div class="button-container">
+            <a
+              target="_blank"
+              name="Send to Bergen Science Museum"
+              href="https://cosmic-stardust-f6a1ad.netlify.app/"
+              ><button class="BSMbtn">Show me more</button></a
+            >
+            <a
+              class="repo-logo"
+              href="https://github.com/griphaugland/SemesterProject"
+              target="_blank"
+              name="link to github repository"
+            >
+              <img
+                class="github"
+                src="./media/github-light.png"
+                height="30px"
+                width="30px"
+              />
+            </a>
+          </div>
         </div>
       </section>
       <section class="card-right-aligned">
@@ -84,27 +86,8 @@
               title="Intrepid iFrame"
             ></iframe>
           </div>
-          <a
-            target="_blank"
-            name="Send to Intrepid"
-            href="https://comfy-sunshine-a436a1.netlify.app/"
-            ><button>Show me more</button></a
-          >
-          <a
-            class="repo-logo"
-            href="https://github.com/griphaugland/CACMS"
-            target="_blank"
-            name="link to github repository"
-          >
-            <img
-              class="github"
-              src="./media/github-light.png"
-              height="30px"
-              width="30px"
-            />
-          </a>
         </div>
-        <div class="card-content-container-text">
+        <div class="card-content-container-text" id="IntrepidDiv">
           <h2 class="website-name-header" id="intrepid">Intrepid</h2>
           <p class="website-description">
             This is a revamp of the first ever website I created. It is a rain
@@ -112,6 +95,27 @@
             pushing the comfort zone. This was my first proper challenge with
             Javascript and a solid rock for me to keep building from.
           </p>
+          <div class="button-container">
+            <a
+              target="_blank"
+              name="Send to Intrepid"
+              href="https://comfy-sunshine-a436a1.netlify.app/"
+              ><button class="Inbtn">Show me more</button></a
+            >
+            <a
+              class="repo-logo"
+              href="https://github.com/griphaugland/CACMS"
+              target="_blank"
+              name="link to github repository"
+            >
+              <img
+                class="github"
+                src="./media/github-light.png"
+                height="30px"
+                width="30px"
+              />
+            </a>
+          </div>
         </div>
       </section>
       <section class="card-left-aligned">
@@ -123,27 +127,8 @@
               title="StudentSnacks iFrame"
             ></iframe>
           </div>
-          <a
-            target="_blank"
-            name="Send to StudentSnacks"
-            href="https://warm-tiramisu-ce3388.netlify.app/"
-            ><button>Show me more</button></a
-          >
-          <a
-            class="repo-logo"
-            href="https://github.com/Noroff-FEU-Assignments/project-exam-1-griphaugland"
-            target="_blank"
-            name="link to github repository"
-          >
-            <img
-              class="github"
-              src="./media/github-light.png"
-              height="30px"
-              width="30px"
-            />
-          </a>
         </div>
-        <div class="card-content-container-text">
+        <div id="StudentSnacksDiv" class="card-content-container-text">
           <h2 class="website-name-header" id="student-snacks">StudentSnacks</h2>
           <p class="website-description">
             My favorite project so far, Studentsnacks has almost everything my
@@ -151,6 +136,27 @@
             at and the recipes actually work. What I love the most about
             Studentsnacks is that it could be an actual brand.
           </p>
+          <div class="button-container">
+            <a
+              target="_blank"
+              name="Send to StudentSnacks"
+              href="https://warm-tiramisu-ce3388.netlify.app/"
+              ><button class="Ssbtn">Show me more</button></a
+            >
+            <a
+              class="repo-logo"
+              href="https://github.com/Noroff-FEU-Assignments/project-exam-1-griphaugland"
+              target="_blank"
+              name="link to github repository"
+            >
+              <img
+                class="github"
+                src="./media/github-light.png"
+                height="30px"
+                width="30px"
+              />
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -161,7 +167,23 @@
           Write me a message or contact me through social media.
         </p>
       </div>
-      <form>
+      <form
+        method="POST"
+        action="https://www.domeneshop.no/cgi-bin/mailto.cgi"
+        accept-charset="ISO-8859-1"
+      >
+        <input type="hidden" name="_to" value="eirik@gripdev.no" />
+        <input type="hidden" name="_from" value="feedback@gripdev.no" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Tilbakemelding fra nettside"
+        />
+        <input
+          type="hidden"
+          name="_resulturl"
+          value="https://gripdev.no/portfolio/"
+        />
         <div class="input-container">
           <input type="text" name="name" id="name" required="" />
           <label id="namelabel" for="name">Full name</label>
