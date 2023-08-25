@@ -476,7 +476,6 @@ input:checked + .slider:before {
     justify-content: space-around;
     flex-direction: column;
     padding: 1rem;
-    animation: colorMoveContainers 3s infinite;
   }
   .card-content-container-text {
     width: 80%;
