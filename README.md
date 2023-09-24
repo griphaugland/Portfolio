@@ -15,7 +15,7 @@ The project was built with
 
 ## Use code
 
-If you want to use to code you are welcome to clone the repo and play around with the project! :)
+If you want to use the code you are welcome to clone the repo and play around with the project! :)
 
 ## Contact
 
